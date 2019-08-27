@@ -1,0 +1,92 @@
+\documentclass[letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[lmargin=3cm,rmargin=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage[natbibapa]{apacite}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{dirtytalk}
+
+\lhead{Universidad del Bío-Bío\\ Facultad de ingeniería \\ Escuela de Ingeniería Industrial}
+%\lhead{\begin{picture}(0,0) \put(0,0){\includegraphics[height=10mm]{logos/escuela}} \end{picture}}
+\rhead{\begin{picture}(0,0) \put(-50,0){\includegraphics[height=10mm]{logos/escudo_ubb_2}} \end{picture}}
+
+
+%\setlength{\parindent}{0pt}
+\bibliographystyle{apacite}
+\pagestyle{fancy}
+
+
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries\centering}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+\vspace*{0.5\baselineskip}
+\begin{center}
+\begin{Large}
+\textbf{\underline{Guía N\textsuperscript{\underline{o}}2}}
+\end{Large}\\
+\vspace*{0.5\baselineskip}
+\textbf{Optimización Lineal} \\
+\vspace*{0.5\baselineskip}
+\begin{footnotesize}
+\textbf{Código}: 430373\\
+\textbf{Semestre}: 2019-2
+\end{footnotesize}
+\end{center}
+
+\noindent \textbf{Profesor}: Dr Carlos Obreque Niñez  \hfill Ayudante: Alex Barrales Araneda\\
+\noindent \textbf{Fecha}: \today
+
+\subsection*{Problema 1}
+El cuartel de bomberos debe tomar acciones para apagar un conjunto $M = 1,2,\dots,m$ de focos de incendio desatados en el país. Para ello dispone de un conjunto $K = 1,2,\dots,k$ de represas de las cuales obtener el agua. Para cada represa $j \in K$ la cantidad máxima de toneladas de agua que puede obtenerse de ella es $B_j$ y cada foco $s \in M$ requiere una cantidad de agua (para apagar el fuego) dada por $A_s$ (en toneladas). Existe una única vía de transporte de agua desde las represas directamente hacia los focos. El costo de transportar una tonelada de agua desde la represa $j \in K$ hasta el foco $s \in M$ es de $T_{js}$. Se puede transportar agua de todos las represas a todos los focos de incendio y un foco de incendio puede recibir agua de una, dos o más represas.
+
+\begin{itemize}
+\item Desarrolle un modelo de PL que permita determinar los volúmenes de agua a enviar desde las represas hacia los focos.
+\end{itemize}
+
+\subsection*{Problema 2}
+El proceso de fabricación de un producto consta de dos operaciones sucesivas, I y II. La siguiente tabla proporciona los datos pertinentes durante los meses de junio, julio y agosto.
+
+\input{tables/tabla:4}
+
+Producir una unidad del producto implica 0,6 horas en la operación I, más 0,8 horas en la operación II. Se permite la sobreproducción del producto semiterminado (en la operación I) y del producto terminado (en la operación II) en cualquier mes para su uso en un mes posterior. Los costos de inventarios para el producto semiterminado y terminado son de \$0,20 y \$0,40 respectivamente, por unidad por mes. El costo de producción varía por operación y por mes. Para la operación I, el costo de producción unitario es de \$10, \$12 y \$11 en junio, julio y agosto, respectivamente. Para la operación II, el costo correspondiente de producción unitario es de \$15, \$18 y \$16. Defina las variables de decisión y formule un modelo de PL para determinar el programa de producción óptimo para las dos operaciones en el horizonte de 3 meses.
+
+\subsection*{Problema 3}
+Una cooperativa agrícola de la región opera cuatro granjas. La producción de cada granja está limitada por la cantidad de agua disponible para irrigación y por el número de hectáreas disponibles para cultivo. Los datos de la tabla \ref{tabla:1} muestran la disponibilidad de agua y tierra en cada una de las granjas. Normalmente, la cooperativa cultiva 3 tipos de productos, aunque cada una de las granjas no necesariamente cultiva todos ellos. Debido a la limitación en la disponibilidad de equipo para cosechar, existen restricciones sobre el número de hectáreas de cada producto que se cultivan en cada granja. Los datos de la tabla \ref{tabla:2} reflejan el número máximo de hectáreas de cada cultivo que pueden producirse en cada granja. El agua que se requiere (expresada en miles de metros cúbicos por hectárea) para los respectivos cultivos son: 6, 5 y 4. Las utilidades que se proyectan por hectárea para cada uno de los tres cultivos son \$500, \$350 y \$200, respectivamente. En la tabla \ref{tabla:3} se indican los costos de producir una hectárea de cada cultivo en la correspondiente granja.
+
+La cooperativa estima que puede vender toda la producción del cultivo A y cultivo C, pero debe asegurarse de producir el equivalente a 250 hectáreas del cultivo B, para satisfacer los compromisos adquiridos con sus clientes con anterioridad.
+
+Para mantener una carga de trabajo equilibrada entre las 4 granjas, la cooperativa ha adoptado la política de hacer que en cada granja se cultive un porcentaje igual de terreno disponible. 
+\input{tables/tabla:1}
+\input{tables/tabla:2}
+\input{tables/tabla:3}
+
+\begin{itemize}
+\item Plantee un modelo de PL para el problema, que permita determinar la cantidad (hectáreas) de cada cultivo que deben plantarse en cada granja para que se maximicen las utilidades totales esperadas para la cooperativa.
+\end{itemize}
+
+
+
+
+\subsection*{Problema 4}
+Una empresa de la zona, dedicada al negocio de comercialización de productos agrícolas, compra y vende trigo y maíz en efectivo. Posee una bodega con capacidad de 32.000 kg para almacenar ambos productos. El 1 de enero, espera tener un inventario inicial de 16.000 kg de trigo, 16.000 kg de maíz y \$600.000 en dinero efectivo. Las condiciones del mercado estipulan que la cantidad de trigo que se compre en un mes estará disponible para la venta inmediatamente al inicio del mes siguiente. De igual forma, la cantidad de maíz que se compre estará disponible para la venta dos meses después de la compra. No hay ninguna forma de vender en un mes la cantidad comprada en el mismo mes. La empresa tiene que satisfacer los pedidos que ha establecido en un contrato con sus clientes preferidos. También, en cada mes, puede vender toda la cantidad que desee y que exceda el pedido exigido para ese mes. El costo de almacenar de un mes a otro es de \$2 el kg de trigo y \$5 el kg de maíz. En las siguientes tablas se muestra el precio de compra, el precio de venta y el tamaño del pedido que debe satisfacer cada mes
+\input{tables/tabla:5}
+\input{tables/tabla:6}
+Se asume que el dinero de las ventas que realiza en un mes llega al final del mismo mes y está disponible para utilizarlo al inicio del mes siguiente. La gerencia de la empresa desea tener un inventario final de 10.000 kg de trigo y 5.000 kg de maíz al terminar el último mes. 
+
+\begin{itemize}
+\item Formule un modelo de programación lineal que le permita a la gerencia disponer de un programa de compra y venta que maximice el dinero que tendrá disponible para el último mes.
+\end{itemize}
+
+\end{document}
+

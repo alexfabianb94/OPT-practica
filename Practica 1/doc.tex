@@ -1,0 +1,86 @@
+\documentclass[letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[lmargin=3cm,rmargin=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage[natbibapa]{apacite}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{dirtytalk}
+
+\lhead{Universidad del Bío-Bío\\ Facultad de ingeniería \\ Escuela de Ingeniería Industrial}
+%\lhead{\begin{picture}(0,0) \put(0,0){\includegraphics[height=10mm]{logos/escuela}} \end{picture}}
+\rhead{\begin{picture}(0,0) \put(-50,0){\includegraphics[height=10mm]{logos/escudo_ubb_2}} \end{picture}}
+
+
+%\setlength{\parindent}{0pt}
+\bibliographystyle{apacite}
+\pagestyle{fancy}
+
+
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries\centering}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+\vspace*{0.5\baselineskip}
+\begin{center}
+\begin{Large}
+\textbf{\underline{Guía N\textsuperscript{\underline{o}}1}}
+\end{Large}\\
+\vspace*{0.5\baselineskip}
+\textbf{Optimización Lineal} \\
+\vspace*{0.5\baselineskip}
+\begin{footnotesize}
+\textbf{Código}: 430373\\
+\textbf{Semestre}: 2019-2
+\end{footnotesize}
+\end{center}
+
+\noindent \textbf{Profesor}: Dr Carlos Obreque Niñez  \hfill Ayudante: Alex Barrales Araneda\\
+\noindent \textbf{Fecha}: \today
+
+\subsection*{Problema 1}
+Una compañía produce tres tamaños de tubos: A, B y C, que son vendidos, respectivamente en 10 unidades monetarias (u.m), 12 u.m. y 9 u.m. por pie. Para fabricar cada pie del tubo A se requieren 30 segundos de tiempo de procesamiento en un tipo particular de máquina de modelado. Cada pie del tubo B requiere 27 segundos y cada pie del tubo C requiere 36 segundos. Después de la producción, cada pie de tubo, sin importar de qué tipo, requiere 25 gramos de material para soldar. El costo de producción total se estima en 3 u.m., 4 u.m. y 4 u.m. por pie de los tubos A, B y C respectivamente.
+
+Para la siguiente semana, la compañía ha recibido pedidos excepcionalmente grandes que totalizan 2000 pies del tubo A, 4000 pies del tubo B y 5000 pies del tubo C. Como sólo se dispone de 40 horas de tiempo de máquina esta semana y sólo se tienen en inventario 138 kg de material de soldar, el departamento de producción no podrá satisfacer esta demanda, que requiere un total de 97 horas de tiempo de máquina y 275 kg de material de soldar. No se espera que continúe este alto nivel de demanda. En lugar de expandir la capacidad de las instalaciones de producción, la gerencia está considerando la compra de algunos de estos tubos a proveedores de Japón a un costo de entrega de 6 u.m. por pie del tubo A, 6 u.m. por pie del tubo B y 7 u.m. por pie del tubo C. No obstante, los proveedores están dispuestos a satisfacer todo el pedido que les hagan siempre y cuando la longitud del tubo A sea a lo más el doble de la suma de los tubos B y C.
+
+Construya el modelo que permita hacer recomendaciones respecto a la cantidad de producción de cada tipo de tubo, y la cantidad de compra a Japón, para satisfacer la demanda y maximizar las ganancias de la compañía.
+
+\subsection*{Problema 2}
+Una compañía fabrica dos productos, A y B. El volumen de producción de A es por lo menos 80\% de las producción total. Sin embargo, la compañía no puede vender más de 100 unidades de A por día. Ambos productos utilizan una materia prima, cuya disponibilidad diaria máxima es de 240 kg. Las tasas de consumo de la materia prima son de 2 kg por unidad de A y de 4 kg por unidad de B. Las utilidades de A y B son de \$20 y \$50, respectivamente. 
+
+\begin{itemize}
+\item Determine la combinación óptima de productos para la compañía.
+\end{itemize}
+
+\subsection*{Problema 3}
+La mayoría de los departamentos académicos de las universidades contratan estudiantes para que realicen encargos de oficina. La necesidad de ese servicio fluctúa durante las horas 8:00 A.M. y 5:00 P.M. En un departamento, la cantidad mínima de estudiantes requeridos es de 2 entre las 8:00 A.M. y las 10:00 A.M.; 3 entre las 10:01 A.M. y las 11:00 A.M.; 4 entre las 11:01 A.M. y la 1:00 P.M., y 3 entre la 1:01 P.M. y las 5:00 P.M. A cada estudiante se le asignan 3 horas consecutivas (excepto a los que inician a las 3:01 P.M. que trabajan 2 horas, y a los que inician a las 4:01 que trabajan 1 hora). Debido al horario flexible de los estudiantes, por lo común pueden iniciar a cualquier hora durante el día de trabajo, excepto a la hora del almuerzo (12:00 del día). 
+
+\begin{itemize}
+\item Desarrolle el modelo de PL y determine un horario que especifique la hora del día y la cantidad de estudiantes que se reportan al trabajo.
+\end{itemize}
+
+\subsection*{Problema 4}
+Una compañía petrolera destila dos tipos de petróleo crudo, A y B, para producir gasolina regular, premium y combustible para gasavión. La disponibilidad diaria de petróleo crudo y la demanda mínima de los productos finales están limitadas. Si la producción no es suficiente para satisfacer la demanda, proveedores externos surten la cantidad faltante con una penalización. La producción excedente se vende completamente al día siguiente, pero se incurre en un costo de almacenamiento. La siguiente tabla proporciona los datos de la situación:
+\input{tables/tabla:4}
+\begin{itemize}
+\item Desarrolle un modelo de PL para determinar la producción diaria óptima de la refinería.
+\end{itemize}
+
+\subsection*{Problema 5}
+Un grupo de 6 hombres y 6 mujeres vive en una isla. Cada uno de los 6 hombres \say{corteja} a una de las 6 mujeres. Al cabo de un cierto tiempo se decide realizar una gran ceremonia durante la cual se casarán 6 parejas. Cada una de las mujeres tiene una lista con los nombres de los 6 hombres y en ella registra sus preferencias en una escala de 1 a 6, pudiendo eliminar los nombres correspondientes a los hombres que no son de su agrado. La tabla siguiente da las \say{calificaciones} otorgadas por cada mujer a cada hombre.
+\input{tables/tabla:5}
+\begin{itemize}
+\item Desarrolle un modelo de PL que permita determinar la asignación que maximiza la felicidad total de los isleños
+\end{itemize}
+
+\end{document}
+

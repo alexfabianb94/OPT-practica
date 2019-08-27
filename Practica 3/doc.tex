@@ -1,0 +1,70 @@
+\documentclass[letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[lmargin=3cm,rmargin=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage[natbibapa]{apacite}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{dirtytalk}
+
+\lhead{Universidad del Bío-Bío\\ Facultad de ingeniería \\ Escuela de Ingeniería Industrial}
+%\lhead{\begin{picture}(0,0) \put(0,0){\includegraphics[height=10mm]{logos/escuela}} \end{picture}}
+\rhead{\begin{picture}(0,0) \put(-50,0){\includegraphics[height=10mm]{logos/escudo_ubb_2}} \end{picture}}
+
+
+%\setlength{\parindent}{0pt}
+\bibliographystyle{apacite}
+\pagestyle{fancy}
+
+
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries\centering}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+\vspace*{0.5\baselineskip}
+\begin{center}
+\begin{Large}
+\textbf{\underline{Guía N\textsuperscript{\underline{o}}3}}
+\end{Large}\\
+\vspace*{0.5\baselineskip}
+\textbf{Optimización Lineal} \\
+\vspace*{0.5\baselineskip}
+\begin{footnotesize}
+\textbf{Código}: 430373\\
+\textbf{Semestre}: 2019-2
+\end{footnotesize}
+\end{center}
+
+\noindent \textbf{Profesor}: Dr Carlos Obreque Niñez  \hfill Ayudante: Alex Barrales Araneda\\
+\noindent \textbf{Fecha}: \today
+
+\subsection*{Problema 1}
+Una compañía de autobuses cree que necesita el siguiente número de choferes durante cada uno de los próximos cinco años: año 1, 60 choferes; año 2, 70 choferes; año 3, 50 choferes; año 4, 65 choferes; año 5, 75 choferes. Al inicio de cada año, la compañía de autobuses debe decidir a cuántos choferes hay que contratar o despedir. Cuesta 4000 dólares contratar a un chofer, y 2000 dólares despedir a un chofer. El salario anual de un chofer es de 10000 dólares. Al inicio del año 1, la compañía tiene 50 choferes. Se puede utilizar a un chofer, contratado a principios de un año, para cumplir con los requerimientos del año actual, y se le paga el salario completo por el año actual. Formule un modelo de programación lineal para minimizar los costos de los salarios, de las contrataciones, y de los despidos, de la compañía, durante los próximos cinco años.
+
+\subsection*{Problema 2}
+Una tienda de flores produce dos tipos de ramos diferentes, los que están compuestos de claveles y los de rosas. El ramo de claveles necesita 1 minuto para su recolección y 2 para su composición final, mientras que el de rosas requiere 3 minutos para su recolección y 1 para su composición. El número de minutos disponibles durante el día es de 300 y 200 minutos para la recolección y finalización de ramos, respectivamente. Los costos de fabricación son de 20 y 30 pesos respectivamente por ramo de clavel y rosa. El ramo de claveles se vende a 25 cada uno y el de rosas a 36 pesos. El número de ramos de rosas no debe ser mayor que 50 más la mitad de los ramos de claveles. El dueño de la tienda pretende optimizar el proceso productivo con el fin de maximizar sus beneficios. Formule un modelo de PL y determine la solución óptima.
+
+\subsection*{Problema 3}
+Una empresa fabrica diferentes productos de madera. Entre ellos: mesas medianas (4s), mesas grandes (6s), sillas y muebles de cocina. La empresa desea determinar cuantas unidades de cada uno de sus productos debe fabricar, y cómo debe asignar su mano de obra para la realización de los trabajos. La empresa cuenta con 18 trabajadores, y cada uno de ellos esta disponible durante 45 horas durante la
+semana. El personal es muy calificado, por lo que puede trabajar en cualquier puesto de trabajo. Además es posible dividir la jornada de un trabajador entre distintos puestos de trabajo. Cada producto debe pasar por los siguientes puestos de trabajo: Corte, Ensamble, Terminación. Los tiempos de proceso en [hrs./unidad], y la utilidad generada por cada producto en [\$/unidad] es:
+
+\input{tables/tabla:1}
+
+Como parte del proceso, es necesario considerar que cada mesa mediana requiere 4 sillas, y cada mesa grande requiere 6 sillas. Las sillas no se venden por separado. Para satisfacer la necesidad de sillas, estas pueden ser fabricadas o compradas a un proveedor externo, cuyo costo es de \$1200 por unidad. Si la demanda mínima esperada para la próxima semana es de 30, 20 y 15, para las mesas medianas, grandes y muebles de cocina respectivamente. Formular el modelo de PL que permita resolver el problema.
+
+\subsection*{Problema 4}
+La Fast Food-UBB opera un restaurante que funciona 24 horas al día. En la empresa trabajan diversas personas, y cada una de ellas lo hace 8 horas consecutivas por día. Debido a que la demanda varía durante el día, el número de empleados que se requiere varía con el tiempo. Con base en experiencias pasadas, la compañía ha proyectado el requerimiento mínimo de obra para cada período de 4 horas del día. Plante un modelo de PL que indique el número mínimo de empleados que se requerirán para atender las operaciones durante las 24 horas. Suponga que el sueldo que se paga a los empelados es el doble desde las 12 pm hasta las 08 am.
+
+\input{tables/tabla:2}
+
+\end{document}
+
