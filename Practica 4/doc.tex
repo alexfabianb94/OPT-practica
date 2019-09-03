@@ -1,0 +1,82 @@
+\documentclass[letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[lmargin=3cm,rmargin=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage[natbibapa]{apacite}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{dirtytalk}
+
+\lhead{Universidad del Bío-Bío\\ Facultad de ingeniería \\ Escuela de Ingeniería Industrial}
+%\lhead{\begin{picture}(0,0) \put(0,0){\includegraphics[height=10mm]{logos/escuela}} \end{picture}}
+\rhead{\begin{picture}(0,0) \put(-50,0){\includegraphics[height=10mm]{logos/escudo_ubb_2}} \end{picture}}
+
+
+%\setlength{\parindent}{0pt}
+\bibliographystyle{apacite}
+\pagestyle{fancy}
+
+
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries\centering}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+\vspace*{0.5\baselineskip}
+\begin{center}
+\begin{Large}
+\textbf{\underline{Guía N\textsuperscript{\underline{o}}4}}
+\end{Large}\\
+\vspace*{0.5\baselineskip}
+\textbf{Optimización Lineal} \\
+\vspace*{0.5\baselineskip}
+\begin{footnotesize}
+\textbf{Código}: 430373\\
+\textbf{Semestre}: 2019-2
+\end{footnotesize}
+\end{center}
+
+\noindent \textbf{Profesor}: Dr Carlos Obreque Niñez  \hfill Ayudante: Alex Barrales Araneda\\
+\noindent \textbf{Fecha}: \today
+
+\subsection*{Problema 1}
+Una persona recibe un premio de 10 millones de pesos en una lotería y le aconsejan que los invierta en dos tipos de acciones, A y B. Las acciones tipo A tienen más riesgo pero producen un beneficio anual del 10\%. Las acciones tipo B son más seguras, pero producen sólo el 7\% anual. Después de varias deliberaciones decide invertir como máximo 6 millones de pesos en la compra de acciones tipo A y por lo menos 2 millones de pesos en la compra de acciones tipo B. Además, decide que lo invertido en A sea, por lo menos, igual a lo invertido en B. 
+
+Defina variables de decisión apropiadas y escriba un modelo de programación lineal para resolver este problema.
+
+\subsection*{Problema 2}
+En un salón de banquetes se tienen programados banquetes durante los siguientes cinco días: Los requisitos de manteles por banquete son:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lrrrrr}
+\hline
+\textbf{Banquete}           & 1  & 2  & 3   & 4   & 5   \\ \hline
+\textbf{Número de Manteles} & 80 & 60 & 100 & 130 & 200 \\ \hline
+\end{tabular}
+\end{table}
+
+El problema del administrador es que se requieren manteles diferentes a los que actualmente se usan, por lo que tendrá que comprar manteles nuevos. El costo de cada mantel es de \$40 y el costo de mandarlo a la lavandería bajo servicio urgente para tenerlo listo a los dos días después es de \$10 por cada mantel. ¿Cuál es el modelo que le permitirá al administrador cumplir con los
+requisitos y además minimizar el costo total?
+
+\subsection*{Problema 3}
+Una empresa productora de jugos de fruta, cada semana, utiliza una sola máquina durante 150 horas para destilar jugo de naranja y de limón en concentrados que se almacenan en dos tanques separados de 1500 litros cada uno antes de congelarlos. La máquina puede
+procesar 25 litros de jugo de naranja por hora, pero sólo 20 litros de jugo de limón por hora. Cada litro de jugo de naranja cuesta \$1.50 y pierde 30\% de contenido de agua al destilarse en concentrado. El concentrado de jugo de naranja se vende después en \$6 por litro. Cada litro de jugo de limón cuesta \$2.00 y pierde 25\% de contenido de agua al destilarse en concentrado. El concentrado de jugo de limón se vende después en \$8 por litro. Defina las variables de decisión y formule un modelo de programación lineal para determinar un plan de producción que maximice la ganancia para la siguiente semana.
+
+\subsection*{Problema 4}
+Un pequeño taller arma dispositivos mecánicos, ya sea como un producto terminado que entrega al mercado, o como un proceso intermedio para entregar a una gran fábrica. Trabajan 3 personas en jornadas de 40 horas semanales. Dos de estos obreros no calificados reciben \$0.4 por hora, y el tercero, un obrero calificado, recibe \$0.6 por hora. Los tres están dispuestos a trabajar hasta 10 horas adicionales a la semana con un salario 50\% superior durante este período. Los costos fijos semanales son de \$800. Los gastos de operación variables son de \$1.0 por hora de trabajo de obrero no calificado y \$2.4 por hora de obrero calificado. Los dispositivos mecánicos sin terminar son vendidos a la fábrica a \$6.5 cada uno. El taller tiene un contrato bajo el cual debe entregar 100 de estos dispositivos semanalmente a la fábrica. El dueño del taller tiene como política el producir no más de 50 dispositivos sin terminar a la semana por sobre el contrato que tiene comprometido.
+
+Los dispositivos terminados se venden a \$15 cada uno sin restricciones de mercado. Se requieren 0.5 horas de obrero no calificado y 0.25 horas de obrero calificado para producir un dispositivo sin acabar listo para entregar a la fábrica. Uno de estos dispositivos sin terminar puede ensamblarse y dejarlo terminado agregándole 0.5 horas de trabajador calificado. Un dispositivo terminado listo para entregar al mercado se puede producir con 0.6 horas de obrero no calificado y 0.5 horas de obrero calificado.
+
+El administrador del taller desea saber la cantidad de dispositivos mecánicos sin terminar, los terminados y los que se terminan a partir de otros no terminados. También, las horas de tiempo normal y extraordinarias que trabajan los obreros calificados y los no calificados. Defina las variables de decisión y formule un modelo de programación lineal que permita programar la producción de modo de maximizar las utilidades.
+
+\end{document}
+
