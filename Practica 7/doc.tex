@@ -34,7 +34,7 @@
 \vspace*{0.5\baselineskip}
 \begin{center}
 \begin{Large}
-\textbf{\underline{Práctica N\textsuperscript{\underline{o}}6}}
+\textbf{\underline{Práctica N\textsuperscript{\underline{o}}7}}
 \end{Large}\\
 \vspace*{0.5\baselineskip}
 \textbf{Optimización Lineal} \\
@@ -46,70 +46,48 @@
 \end{center}
 
 \noindent \textbf{Profesor}: Dr Carlos Obreque Niñez  \hfill Ayudante: Alex Barrales Araneda\\
-\noindent \textbf{Fecha}: 24 de septiembre de 2019
+\noindent \textbf{Fecha}: 3 de diciembre de 2019
 
 \subsection*{Problema 1}
-Considere el siguiente Problema de Programación Lineal:
+Sea el siguiente Problema de Programación Lineal:
 \begin{align*}
-\mbox{Maximizar }&Z = -2X_1 - X_2\\
+\mbox{Minimizar }&Z = x_1 + 2x_2 \\
 s.a.\\
-&-X_1 + X_2 \leq 10\\
-&X_1 + X_2 \geq -12\\
-&X_1 \leq 1 ; X_2\: n.r.s.\\
+&x_1 + x_2 \qquad \leq 9\\
+&\qquad x_2 + 8x_3 \geq 3\\
+&x_1 \qquad + 2x_3  = 12\\
+&x_1 \geq 0 ;x_2 \geq 0 ;x_3\: s.r.s.\\
 \end{align*}
 
 \begin{itemize}
-\item Escriba el problema de PL en la Forma Estándar.
-\item Determine una solución básica factible de (c) e indique en el gráfico a cual vértice corresponde.
+\item Resolver el PPL utilizando el Método de la Gran M. Plantee claramente su desarrollo. 
 \end{itemize}
 
 \subsection*{Problema 2}
-Considere el siguiente modelo de PL:
+Resolver el siguiente modelo de programación lineal mediante el método Simplex.
 \begin{align*}
-\mbox{Minimizar }&Z = 4X_1 + 5X_2\\
+\mbox{Maximizar }&Z = x_1 + 5x_2\\
 s.a.\\
-&2X_1 + 5X_2 \leq 20\\
-&X_1 + 2X_2 \geq -4\\
-&2X_1 - 3X_2 \leq 12\\
-&X_1 \geq 0 ; X_2\: n.r.s.\\
+&x_1 + 4x_2 \geq 20\\
+&2x_1 - x_2 \geq -10\\
+&x_1 \leq 5 ; x_2 \geq 0\\
 \end{align*}
-\begin{itemize}
-\item Obtenga la solución básica factible correspondiente a la solución óptima.
-\item Determine otra solución básica factible e indique gráficamente a qué punto extremo corresponde.
-\end{itemize}
 
 \subsection*{Problema 3}
-Considere el siguiente modelo de programación lineal:
+Considere el siguiente modelo de PL:
 \begin{align*}
-\mbox{Minimizar }&Z = 2X_1 + X_2\\
+\mbox{Maximizar }&Z = 2x_1 + 4x_2\\
 s.a.\\
-&-2X_1 - 3X_2 \leq 6\\
-&-4X_1 + 5X_2 \leq 20\\
-&5X_1 + 3X_2 \leq 15\\
-&X_1\: n.r.s.; X_2 \geq 0 \\
+&x_1 + 2x_2 \leq 4\\
+&x_1 + x_2 \geq 2\\
+&5x_1 + 4x_2 \leq 20\\
+&x_1 + 5x_2 \leq 10\\
+&x_1 \geq 0; x_2 \geq 0 \\
 \end{align*}
-El algoritmo Simplex produce la siguiente tabla intermedia:
-
-{\centering
-\includegraphics[width=0.6\textwidth]{images/simplex}
-
-}
 
 \begin{itemize}
-\item Indique si la solución básica factible es la óptima. En caso contrario continúe iterando hasta encontrar la solución óptima.
+\item Escriba la forma estándar. 
+\item Determine la solución óptima mediante el algoritmo simplex.
 \end{itemize}
 
-\subsection*{Problema 4}
-Resuelva el siguiente modelo de programación lineal utilizando el algoritmo Simplex.
-\begin{align*}
-\mbox{Maximizar }&Z = -X_1\\
-s.a.\\
-&X_1 + 20 \leq X_2\\
-&X_1  = 100\\
-&X_2  \leq 150\\
-&X_1 \geq 0 ; X_2 \geq 0\\
-\end{align*}
-\begin{itemize}
-\item Determine la Solución Optima.
-\end{itemize}
 \end{document}
