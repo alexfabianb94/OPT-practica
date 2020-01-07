@@ -1,0 +1,109 @@
+\documentclass[letterpaper]{article}
+%\documentclass[legalpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[lmargin=3cm,rmargin=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage[natbibapa]{apacite}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{dirtytalk}
+
+\lhead{Universidad del Bío-Bío\\ Facultad de ingeniería \\ Escuela de Ingeniería Industrial}
+%\lhead{\begin{picture}(0,0) \put(0,0){\includegraphics[height=10mm]{logos/escuela}} \end{picture}}
+\rhead{\begin{picture}(0,0) \put(-50,0){\includegraphics[height=10mm]{logos/escudo_ubb_2}} \end{picture}}
+
+
+%\setlength{\parindent}{0pt}
+\bibliographystyle{apacite}
+\pagestyle{fancy}
+
+
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries\centering}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+
+\begin{document}
+\vspace*{0.5\baselineskip}
+\begin{center}
+\begin{Large}
+\textbf{\underline{Práctica N\textsuperscript{\underline{o}}9}}
+\end{Large}\\
+\vspace*{0.5\baselineskip}
+\textbf{Optimización Lineal} \\
+\vspace*{0.5\baselineskip}
+\begin{footnotesize}
+\textbf{Código}: 430373\\
+\textbf{Semestre}: 2019-2
+\end{footnotesize}
+\end{center}
+
+\noindent \textbf{Profesor}: Dr Carlos Obreque Niñez  \hfill Ayudante: Alex Barrales Araneda\\
+\noindent \textbf{Fecha}: 7 de enero de 2020
+
+\subsection*{Problema 1}
+El administrador del hospital general St. Charles debe nombrar jefas de enfermeras para cuatro departamentos recién establecidos: urología, cardiología, ortopedia y obstetricia. Anticipándose a su problema de personal, había contratado a cuatro enfermeras: Hawkins, Condriac, Bardot y Hoolihan. Debido a que creía en el método de análisis cuantitativo para resolver problemas, entrevistó a cada enfermera, consideró sus antecedentes, personalidad y talentos y desarrolló una escala de costos que van desde 0 a 100 para utilizarla en la asignación. Un 0 para la enfermera Bardot asignada a la unidad de cardiología implica que sería perfectamente adecuada para la tarea. Un valor próximo a 100, por otra parte, implicaría que no es apta para dirigir esa unidad. La tabla adjunta muestra el conjunto completo de cifras de costos que el administrador del hospital piensa que representan todas las asignaciones posibles. 
+
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lllll}
+\hline
+          & \multicolumn{4}{c}{Departamento}                 \\
+Enfermera & Urología & Cardiología & Ortopedia & Obstetricia \\ \hline
+Hawkins   & 28       & 18          & 15        & 75          \\
+Condriac  & 32       & 48          & 23        & 38          \\
+Bardot    & 51       & 36          & 24        & 36          \\
+Hoolihan  & 25       & 38          & 55        & 12         \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{itemize}
+\item Determine ¿Cuál enfermera deberá ser asignada a cada unidad?
+\end{itemize}
+\subsection*{Problema 2}
+Una empresa de la región posee tres plantas de producción. La planta A tiene 180 unidades producidas que se encuentran disponibles para ser transportadas a los clientes. Por cada unidad que permanezca en esta planta y no sea utilizada para satisfacer la demanda se incurre en un costo de almacenamiento de 8 pesos. Las plantas B y C tienen una capacidad de producción máxima de 120 y 150 unidades, respectivamente. La demanda de los clientes 1, 2 y 3 es de 130, 150 y 130 unidades, respectivamente. El costo unitario de producción en la planta A es de 11 pesos, en B es de 10 pesos y en la planta C es de 12 pesos. Los costos de transporte desde la planta A hacia los clientes 1, 2 y 3 son de 1, 2 y 13 pesos por unidad, respectivamente. De la planta B y C los costos son 10, 13, 11 y 10, 13, 5, respectivamente. 
+
+\begin{itemize}
+\item Determine la solución óptima.
+\item Suponga que los tres clientes estarían dispuestos a recibir las unidades sobrantes siempre que se les rebaje en un 50\% los costos totales (de producción más transporte). Construya la tabla de transporte.
+\end{itemize}
+
+\subsection*{Problema 2}
+Cinco empresas constructoras postulan a una licitación pública para la construcción de seis edificios gubernamentales en la octava región. La oficina estatal encargada de asignar las empresas a la construcción de los edificios decide asignar una obra a cada constructora siempre y cuando se postule a la construcción de cualquiera de los seis edificios. Según el estudio técnico económico de cada empresa postulante, los beneficios (en millones de pesos) que obtendría cada una de ellas por la construcción de un edificio, se da en la tabla siguiente.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{llllll}
+\hline
+         & \multicolumn{5}{c}{Empresa Constructora} \\
+Edificio & 1      & 2      & 3      & 4     & 5     \\ \hline
+A        & 20     & 30     & 50     & 40    & 70    \\
+B        & 30     & 10     & 10     & 20    & 50    \\
+C        & 40     & 30     & 60     & 30    & 40    \\
+D        & 30     & 20     & 40     & 50    & 60    \\
+E        & 60     & 70     & 50     & 70    & 50    \\
+F        & 30     & 40     & 60     & 40    & 60    \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{itemize}
+\item Encuentre la asignación óptima que deje satisfecha a la oficina estatal.
+\end{itemize}
+
+\end{document}
+
+
